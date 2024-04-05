@@ -1,0 +1,62 @@
+---
+page-layout: custom
+comments: false
+---
+
+<link rel="me" href="https://vis.social/@basepair" />
+<link rel="me" href="https://genomic.social/@basepair" />
+<link rel="me" href="https://scicomm.xyz/@basepair" />
+
+
+::: {.grid}
+::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-7 .g-start-lg-2}
+
+::: {.welcome-title}
+Hey there!
+:::
+
+::: {.welcome-message}
+I'm a developer and data geek specialising in engineering, machine learning and data science, as well as visualization and analytics.
+
+:::
+
+:::
+
+::: {.g-col-0 .g-start-col-0 .g-col-lg-3 .welcome-hero}
+
+
+:::
+
+:::
+
+<br><br>
+
+::: {.grid}
+
+
+::: {.g-col-10 .g-start-2 .g-col-md-4 .g-start-md-3}
+<div class="card mb-2">
+<div class="card-body">
+<h5 class="card-title">Blog</h5>
+<p class="card-text">I write stuff sometimes, some of it is good (maybe).</p>
+<a href="posts.html" class="btn btn-primary stretched-link">Start reading</a>
+</div>
+</div>
+
+:::
+::: {.g-col-10 .g-start-2 .g-col-md-4}
+<div class="card mb-2">
+<div class="card-body">
+<h5 class="card-title">Projects</h5>
+<p class="card-text">A small collection of some of my projects or ideas.</p>
+<a href="projects.html" class="btn btn-primary stretched-link">Browse</a>
+</div>
+</div>
+
+:::
+:::
+
+::: {.welcome-message}
+
+
+:::

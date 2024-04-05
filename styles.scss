@@ -1,0 +1,51 @@
+/*-- scss:defaults --*/
+
+
+// import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Fira+Code&family=Roboto+Mono:wght@300;400&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// use Sora font if available
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif !default;
+
+/*-- scss:rules --*/
+
+.welcome-title p {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.welcome-message p {
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+.welcome-hero {
+    display: none;
+}
+
+@include media-breakpoint-up(lg) {
+    .welcome-hero {
+        display: block;
+        background-image: url("assets/images/welcome.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.card {
+    font-size: 1.2rem;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.card h5 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+img {
+    font-size: 0.75rem;
+    font-family: $font-family-monospace;
+    font-style: italic;
+}

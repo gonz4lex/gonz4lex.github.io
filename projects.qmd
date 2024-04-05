@@ -1,0 +1,63 @@
+---
+title: "Projects"
+comments: false
+page-layout: full
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+
+<div class="card mb-3">
+<div class="card-body">
+<h3 class="card-title">Project Name</h3>
+<h6 class="card-subtitle text-muted">Subtitle</h6>
+</div>
+<img src="assets/images/webpea_hex.webp" class="contain" height="400"/>
+<div class="card-body">
+<p class="card-text">Description</p>
+<!-- <img src="https://github.com/nucleic-acid/webpea/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check" style="max-width: 100%;"> -->
+<br><br>
+<h5>Key features:</h5>
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">Feature 1</li>
+<li class="list-group-item">Feature 2</li>
+<li class="list-group-item">Feature 3</li>
+</ul>
+<div class="card-body">
+<a href="https://nucleic-acid.github.io/webpea/" class="card-link">Documentation</a>
+<a href="https://github.com/nucleic-acid/webpea/" class="card-link">Source code</a>
+</div>
+</div>
+
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
+<div class="card mb-3">
+<div class="card-body">
+<h3 class="card-title">Project Name</h3>
+<h6 class="card-subtitle text-muted">Subtitle</h6>
+</div>
+<img src="assets/images/webpea_hex.webp" class="contain" height="400"/>
+<div class="card-body">
+<p class="card-text">Description</p>
+<!-- <img src="https://github.com/nucleic-acid/webpea/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check" style="max-width: 100%;"> -->
+<br><br>
+<h5>Key features:</h5>
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">Feature 1</li>
+<li class="list-group-item">Feature 2</li>
+<li class="list-group-item">Feature 3</li>
+</ul>
+<div class="card-body">
+<a href="https://nucleic-acid.github.io/webpea/" class="card-link">Documentation</a>
+<a href="https://github.com/nucleic-acid/webpea/" class="card-link">Source code</a>
+</div>
+</div>
+
+:::
+
+:::
