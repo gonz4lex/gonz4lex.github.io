@@ -11,12 +11,21 @@ website:
         href: https://github.com/
       - icon: linkedin
         href: https://twitter.com
+  search:
+    location: navbar
+    type: overlay
+  comments:
+    giscus: 
+      repo: gonz4lex/qblog
+      reactions-enabled: true
+      language: en
+      theme:
+        light: light
+        dark: dark_dimmed
+
 format:
   html:
     theme:
       light: [lux, styles.scss]
       dark: [slate, styles.scss]
     css: styles.css
-
-
-

@@ -6,3 +6,13 @@ freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
+
+# Default author
+author: "Alex Gonzalez"
+
+# Table of Contents and Navigation
+toc: true
+toc-depth: 3
+
+page-navigation: true
+page-layout: article
