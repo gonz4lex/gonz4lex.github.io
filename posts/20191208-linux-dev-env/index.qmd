@@ -1,11 +1,13 @@
 ---
 title: How I got started with Linux
+subtitle: An overview of my Linux development setup.
 date: 2019-12-08 22:50
-category: linux
+categories: [linux, code]
 slug: linux-dev-env
 author: Alex Gonzalez
-summary: An overview of my Linux development setup.
 ---
+
+![](linux.png)
 
 I recently got the itch of purchasing a new laptop for development and learning, so I took the chance on Black Friday and got myself a nice HP Stream 14. I am a long-time Windows user so I thought it would be a great opportunity to get started with Linux and set up a developer workstation while documenting the process.
 

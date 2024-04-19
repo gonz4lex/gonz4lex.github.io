@@ -1,10 +1,12 @@
 ---
 title: Data Analysis eXpressions query language
+subtitle: A brief overview of the DAX language for data analysis.
 date: 2019-12-27 10:32
-category: data engineering, power bi
+categories:
+    - data engineering
+    - power bi
 slug: learning-dax
 author: Alex Gonzalez
-summary: The first part of an overview of the DAX language for data analysis.
 ---
 
 ## Data Analysis eXpressions (DAX)

@@ -1,14 +1,20 @@
 ---
 title: How to build Aseprite from source in Ubuntu
+subtitle: Aseprite is an amazing pixel art software and its source code is open. This is how you can build and test it, or help with its development.
 date: 2020-1-4 00:33
-category: gamedev, art
+categories: 
+  - game dev
+  - art
 slug: how-to-build-aseprite-from-source
 author: Alex Gonzalez
-summary: Aseprite is an amazing pixel art software and its source code is open. This is how you can build and test it, or help with its development.
 ---
 
-> __Disclaimer:__
-> Aseprite is a paid software and you should buy it to support its developers. It's 15$ and can be purchased for Windows, macOS and Linux, as well as Steam. You can use this method to inspect the source code and try to help with development, or to try the software. There is also a free trial in their website.
+![*Source: aseprite.org*](aseprite.png)
+
+::: {.callout-important}
+__Disclaimer:__
+Aseprite is a paid software and you should buy it to support its developers. It's 15$ and can be purchased for Windows, macOS and Linux, as well as Steam. You can use this method to inspect the source code and try to help with development, or to try the software. There is also a free trial in their website.
+:::
 
 ## Building Aseprite from Github
 
