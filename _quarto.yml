@@ -1,19 +1,25 @@
 project:
   type: website
+  resources: 
+    - CNAME
 
 website:
   title: "Alex Gonzalez"
+  image: assets/images/welcome-blossoms.png
   site-url: https://alexgonzalezc.dev/
   navbar:
+    logo: assets/images/welcome-blossoms.png
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/gonz4lex/
       - icon: linkedin
-        href: https://twitter.com
+        href: https://linkedin.com/in/alejandro-gonzalez-a05636127
   search:
     location: navbar
     type: overlay
+  page-navigation: true
+  back-to-top-navigation: true
   comments:
     giscus: 
       repo: gonz4lex/qblog
