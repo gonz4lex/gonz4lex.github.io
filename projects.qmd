@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Alex Gonzalez | Projects"
 comments: false
 page-layout: full
 ---

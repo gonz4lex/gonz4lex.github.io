@@ -3,9 +3,9 @@ page-layout: custom
 comments: false
 ---
 
-<link rel="me" href="https://vis.social/@basepair" />
-<link rel="me" href="https://genomic.social/@basepair" />
-<link rel="me" href="https://scicomm.xyz/@basepair" />
+
+<!-- Mastodon -->
+<!-- <link rel="me" href="https://scicomm.xyz/@basepair" /> -->
 
 
 ::: {.grid}
@@ -16,7 +16,7 @@ Hey there!
 :::
 
 ::: {.welcome-message}
-I'm a developer and data geek specialising in engineering, machine learning and data science, as well as visualization and analytics.
+I'm a data geek specialising in machine learning engineering and data science, as well as visualization and analytics.
 
 :::
 
@@ -37,8 +37,8 @@ I'm a developer and data geek specialising in engineering, machine learning and 
 ::: {.g-col-10 .g-start-2 .g-col-md-4 .g-start-md-3}
 <div class="card mb-2">
 <div class="card-body">
-<h5 class="card-title">Blog</h5>
-<p class="card-text">I write stuff sometimes, some of it is good (maybe).</p>
+<h5 class="card-title"> {{< fa solid pen-clip >}} Writing</h5>
+<p class="card-text">I write sometimes, some of it is good stuff.</p>
 <a href="posts.html" class="btn btn-primary stretched-link">Start reading</a>
 </div>
 </div>
@@ -47,14 +47,16 @@ I'm a developer and data geek specialising in engineering, machine learning and 
 ::: {.g-col-10 .g-start-2 .g-col-md-4}
 <div class="card mb-2">
 <div class="card-body">
-<h5 class="card-title">Projects</h5>
-<p class="card-text">A small collection of some of my projects or ideas.</p>
+<h5 class="card-title"> {{< fa solid scroll >}} Projects</h5>
+<p class="card-text">A small collection of some of my projects.</p>
 <a href="projects.html" class="btn btn-primary stretched-link">Browse</a>
 </div>
 </div>
 
 :::
 :::
+
+<!-- Add latest posts here?  -->
 
 ::: {.welcome-message}
 

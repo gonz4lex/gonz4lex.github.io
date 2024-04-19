@@ -22,7 +22,7 @@ page-layout: full
 
 :::{#hero-heading}
 
-Hey there! I'm a developer and data geek specialising in engineering, machine learning and data science, as well as visualization and analytics
+I'm a data geek specialising in machine learning engineering and data science, as well as visualization and analytics.
 
 :::
 
@@ -36,11 +36,13 @@ In science, I value **transparent and reproducible methods** in order to build t
 ::: {.grid}
 ::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-6}
 
-## {{< fa solid graduation-cap >}}  Education / Work
+## {{< fa solid bolt >}} Work
 
-- **Data Scientist and ML Engineer** @ SDG Group (Mar 2023 - present)
-- **AI and ML Engineer** @ Bravent (Jan 2022 - Feb 2023)
+- **ML Engineer** @ SDG Group (Mar 2023 - present)
+- **AI/ML Engineer** @ Bravent (Jan 2022 - Feb 2023)
 - **Data Scientist** @ Tinamica (Jan 2020 - Jan 2022)
+---
+## {{< fa solid graduation-cap >}} Education
 - **MSc Big Data Analytics for Economics and Business** @ UIB (2020)
 - **BSc Economics** @ UIB (2012 - 2017)
   
@@ -48,11 +50,13 @@ In science, I value **transparent and reproducible methods** in order to build t
 
 ::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-5  .g-start-lg-8}
   
-## {{< fa solid heart >}} Interests 
+## {{< fa fire-flame-curved >}} Interests 
 
 - Statistics and Data Visualization
 - Technology and Engineering 
 - Skateboarding
+- Music, [many kinds](https://music.youtube.com/channel/UCiROnSAmnLLgKFFMh4aRShQ)
+- 
 
 :::
 
