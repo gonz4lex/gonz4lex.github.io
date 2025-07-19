@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Alex Gonzalez</title>
+<link>https://alexgonzalezc.dev/posts.html</link>
+<atom:link href="https://alexgonzalezc.dev/posts.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<image>
+<url>https://alexgonzalezc.dev/assets/images/welcome-blossoms.png</url>
+<title>Alex Gonzalez</title>
+<link>https://alexgonzalezc.dev/posts.html</link>
+<height>144</height>
+<width>144</width>
+</image>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Tue, 02 Apr 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Understanding RAG systems with a practical application using locally executed LLMs</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20240402-rag-system-with-langchain/rag-system.html</link>
+  <description><![CDATA[ One of the latest trending methods in modern NLP is <strong>Retrieval Augmented Generation</strong> (RAG), which is a recent approach to improve the information retrieval and generation capabilities of large language models. In a RAG system, the models are used to extract relevant information from large datasets and generate coherent responses and insights from them. This is a invaluable technique for several common use cases such as question answering or conversational agents. However, cutting-edge LLMs take vast amount of resources for training and inference and are not usually free to access. ]]></description>
+  <category>AI</category>
+  <category>Code</category>
+  <guid>https://alexgonzalezc.dev/posts/20240402-rag-system-with-langchain/rag-system.html</guid>
+  <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://alexgonzalezc.dev/posts/20240402-rag-system-with-langchain/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>A comment system for static websites using Github Discussions</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20220423-github-comment-system/</link>
+  <description><![CDATA[ I’ve been searching for an easy alternative to a comment system for this <a href="https://www.alexgonzalezc.dev">blog</a>, which is built with <a href="https://blog.getpelican.com/">Pelican</a> and served through Github Pages. Being a static website, traditional server-based solutions are not a good fit or they require too much setup work that I really didn’t want to do. So after many months procrastinating on this, I finally sat down and got it work in less than an hour. Easy! ]]></description>
+  <category>Web Dev</category>
+  <guid>https://alexgonzalezc.dev/posts/20220423-github-comment-system/</guid>
+  <pubDate>Sat, 23 Apr 2022 13:31:00 GMT</pubDate>
+</item>
+<item>
+  <title>A Pint of API</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20191208-pint-of-api/</link>
+  <description><![CDATA[ API stands for Application Programming Interface. In other words, it’s an <em>interface</em> that makes it easier for developers to <em>program</em> different <em>applications</em>. ]]></description>
+  <category>Web Dev</category>
+  <guid>https://alexgonzalezc.dev/posts/20191208-pint-of-api/</guid>
+  <pubDate>Sat, 18 Jan 2020 23:50:00 GMT</pubDate>
+</item>
+<item>
+  <title>How to build Aseprite from source in Ubuntu</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/</link>
+  <description><![CDATA[ <img src="https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/aseprite.png" class="img-fluid figure-img"> ]]></description>
+  <category>Game Dev</category>
+  <guid>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/</guid>
+  <pubDate>Sat, 04 Jan 2020 00:33:00 GMT</pubDate>
+</item>
+<item>
+  <title>Data visualization principles</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/</link>
+  <description><![CDATA[ Updated on 2020-1-23 with figures and examples, like a good post about data visualization. ]]></description>
+  <category>Data Visualization</category>
+  <guid>https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/</guid>
+  <pubDate>Wed, 01 Jan 2020 20:05:00 GMT</pubDate>
+  <media:content url="https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/chart-viz.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Data Analysis eXpressions query language</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20191227-learning-dax/</link>
+  <description><![CDATA[ DAX is a functional language, that is, execution flows from function calls read from inner to outer context in nested calls. ]]></description>
+  <category>Data Engineering</category>
+  <category>PowerBI</category>
+  <guid>https://alexgonzalezc.dev/posts/20191227-learning-dax/</guid>
+  <pubDate>Fri, 27 Dec 2019 10:32:00 GMT</pubDate>
+</item>
+<item>
+  <title>How I got started with Linux</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20191208-linux-dev-env/</link>
+  <description><![CDATA[ <img src="https://alexgonzalezc.dev/posts/20191208-linux-dev-env/linux.png" class="img-fluid"> ]]></description>
+  <category>Linux</category>
+  <category>Code</category>
+  <guid>https://alexgonzalezc.dev/posts/20191208-linux-dev-env/</guid>
+  <pubDate>Sun, 08 Dec 2019 22:50:00 GMT</pubDate>
+</item>
+<item>
+  <title>An introduction to Power BI for data scientists</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20191206-power-bi-intro/</link>
+  <description><![CDATA[ Get started with Power BI to speed up your exploratory data analysis when looking for trends and features than might be useful for prediction or classification with machine learning algorithms. ]]></description>
+  <category>Data Visualization</category>
+  <category>PowerBI</category>
+  <guid>https://alexgonzalezc.dev/posts/20191206-power-bi-intro/</guid>
+  <pubDate>Fri, 06 Dec 2019 17:42:00 GMT</pubDate>
+</item>
+<item>
+  <title>Master of Visual Studio Code</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20191126-vs-code-ninja/</link>
+  <description><![CDATA[ Visual Studio Code is a lightweight code editor with a lot of powerful capabilities. If you like Visual Studio, this is quite similar but without the abhorrent load times. It’s available for the main operative systems and includes built-in support for JavaScript. It has a rich ecosystem of extensions that extend support to other languages such as C#, Java, Python, and SQL, as well as runtimes like .NET and Unity. ]]></description>
+  <category>Code</category>
+  <guid>https://alexgonzalezc.dev/posts/20191126-vs-code-ninja/</guid>
+  <pubDate>Tue, 26 Nov 2019 19:27:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

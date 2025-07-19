@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alex Gonzalez">
+<meta name="dcterms.date" content="2019-11-26">
+
+<title>Master of Visual Studio Code – Alex Gonzalez</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-c77c980ae4ace09218499f24d0dd9818.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/images/welcome-blossoms.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Alex Gonzalez</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gonz4lex/"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/alejandro-gonzalez-a05636127"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Master of Visual Studio Code</h1>
+            <p class="subtitle lead">Master Visual Studio Code and its features with these tips</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Code</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Gonzalez </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 26, 2019</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#explorer" id="toc-explorer" class="nav-link" data-scroll-target="#explorer">Explorer</a></li>
+  <li><a href="#search" id="toc-search" class="nav-link" data-scroll-target="#search">Search</a></li>
+  <li><a href="#source-control" id="toc-source-control" class="nav-link" data-scroll-target="#source-control">Source control</a></li>
+  <li><a href="#debugger" id="toc-debugger" class="nav-link" data-scroll-target="#debugger">Debugger</a></li>
+  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a></li>
+  <li><a href="#integrated-terminal" id="toc-integrated-terminal" class="nav-link" data-scroll-target="#integrated-terminal">Integrated Terminal</a></li>
+  <li><a href="#the-command-palette" id="toc-the-command-palette" class="nav-link" data-scroll-target="#the-command-palette">The command palette</a></li>
+  <li><a href="#customization" id="toc-customization" class="nav-link" data-scroll-target="#customization">Customization</a>
+  <ul class="collapse">
+  <li><a href="#themes-and-icons" id="toc-themes-and-icons" class="nav-link" data-scroll-target="#themes-and-icons">Themes and icons</a></li>
+  <li><a href="#fonts" id="toc-fonts" class="nav-link" data-scroll-target="#fonts">Fonts</a></li>
+  </ul></li>
+  <li><a href="#workspaces" id="toc-workspaces" class="nav-link" data-scroll-target="#workspaces">Workspaces</a></li>
+  <li><a href="#editing-evolved" id="toc-editing-evolved" class="nav-link" data-scroll-target="#editing-evolved">Editing evolved</a>
+  <ul class="collapse">
+  <li><a href="#intellisense" id="toc-intellisense" class="nav-link" data-scroll-target="#intellisense">IntelliSense</a></li>
+  <li><a href="#code-formatting-and-navigation" id="toc-code-formatting-and-navigation" class="nav-link" data-scroll-target="#code-formatting-and-navigation">Code formatting and navigation</a></li>
+  <li><a href="#errors-warnings-and-info" id="toc-errors-warnings-and-info" class="nav-link" data-scroll-target="#errors-warnings-and-info">Errors, warnings and info</a></li>
+  <li><a href="#keyboard-shortcuts" id="toc-keyboard-shortcuts" class="nav-link" data-scroll-target="#keyboard-shortcuts">Keyboard shortcuts</a></li>
+  <li><a href="#code-snippets" id="toc-code-snippets" class="nav-link" data-scroll-target="#code-snippets">Code snippets</a></li>
+  </ul></li>
+  <li><a href="#extensions-showcase" id="toc-extensions-showcase" class="nav-link" data-scroll-target="#extensions-showcase">Extensions showcase</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Visual Studio Code is a lightweight code editor with a lot of powerful capabilities. If you like Visual Studio, this is quite similar but without the abhorrent load times. It’s available for the main operative systems and includes built-in support for JavaScript. It has a rich ecosystem of extensions that extend support to other languages such as C#, Java, Python, and SQL, as well as runtimes like .NET and Unity.</p>
+<p>It ships with great features such as IntelliSense, debugging and in-product source control.</p>
+</section>
+<section id="explorer" class="level2">
+<h2 class="anchored" data-anchor-id="explorer">Explorer</h2>
+<p>Use <code>Ctrl+B</code> to toggle the sidebar, where you can find the main functionalities. In Code, you work in directories or folders where your source code lives. The explorer allows for quick access and manipulation of the files in your project. You can use <code>Ctrl+P</code> to open files in your folders faster.</p>
+</section>
+<section id="search" class="level2">
+<h2 class="anchored" data-anchor-id="search">Search</h2>
+<p>Search files and inside of them. Match whole words or substrings, toggle case-sensitive search, use regex, and filter for different file types. You can launch the <em>search and replace</em> feature from this pane, as well as by using <code>Ctrl+F</code>.</p>
+</section>
+<section id="source-control" class="level2">
+<h2 class="anchored" data-anchor-id="source-control">Source control</h2>
+<p>You can integrate with both Git and Microsoft’s TFVC (Team Foundation Version Control), although the latter needs to be installed. By opening a folder that’s mapped to a TFVC repository, you can automatically check folders in and out, write your commit messages, view your work items or tasks and associate commits to them, all from inside the editor.</p>
+</section>
+<section id="debugger" class="level2">
+<h2 class="anchored" data-anchor-id="debugger">Debugger</h2>
+<p>Launch the debugger panel by pressing <code>Ctrl+Shift+D</code> and click the little configuration icon to create a debugging task. The editor detects your debugging environment automatically, but if this fails you can manually choose it. Next, you can set breakpoints wherever you want your program to stop and press <code>F5</code> to start debugging. Now, you can inspect the status of all your variables and functions, examine their values and attributes, at any point in your file. In the panel you will see four main areas:</p>
+<ul>
+<li>Variables: contains all of the existing variables in your program.</li>
+<li>Watch: this contains those variables that you have flagged for further inspection, so that they are easy to find.</li>
+<li>Call Stack: this explains how the program got to where it currently is.</li>
+<li>Breakpoints: here you can see any breakpoints that you have set and quickly refer to them to disable, enable, or reapply them.</li>
+</ul>
+<p>Breakpoints are set by clicking on the gutter of your file or by pressing <code>F9</code> and they stop the execution of your program. You can change a breakpoint to also be a log points, that is, some info will be logged to the console when the program execution reaches that point.</p>
+<p>When debugging, you can take a few actions that are know as “stepping through code”:</p>
+<ul>
+<li>Step over: this will step over a given line, meaning that if the line contains a function, it will be executed and the result returned without debugging each line.</li>
+<li>Step into: if the line you are going to step into contains a function, the debugger will enter it and continue working line by line. Otherwise it will behave as step over.</li>
+<li>Step out: this takes the debugger to the line where the current function was called.</li>
+</ul>
+<p>You can also launch an interactive debugging console with <code>Ctrl+Shift+Y</code>.</p>
+<p>This is just a subset of the debugging capabilities of VS Code, and the topic deserves a course on its own.</p>
+</section>
+<section id="extensions" class="level2">
+<h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
+<p>One of the killer features of Code. The Visual Studio marketplace is community-sourced and you can make your own extensions with JavaScript or TypeScript. There are loads of useful features in extensions, but take into account that every extension that you install with have a small impact in the performance of your editor. Also, they bloat the <code>%APPDATA%</code> folder in your roaming profile, making your machine start up a lot more slowly.</p>
+<p>As a workaround, you can write a one line batch file that loads the editor’s metadata from a location outside the roaming profile where you have previously placed the Code folder.<br>
+For example, my setup is as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>code <span class="op">--</span>extensions-dir <span class="st">"C:/Code"</span> <span class="op">--</span>user-data-dir <span class="st">"C:/Code"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Save this with a <code>.bat</code> extension and place it in your desktop. Next time you open VS Code, you can do it from that icon. It’s not the most elegant solution, but it works in corporate machines.</p>
+<p>Alternatively, check the <a href="https://code.visualstudio.com/docs/editor/portable">portable version of VS Code</a>.</p>
+<p>They can also be enabled or disabled whenever necessary at the user or the workspace level.</p>
+</section>
+<section id="integrated-terminal" class="level2">
+<h2 class="anchored" data-anchor-id="integrated-terminal">Integrated Terminal</h2>
+<p>You can open several terminals in different languages, stack them on top of each other or put them to the side. You can use <code>Ctrl+`</code> (or <code>Ctrl+Ñ</code> in my Spanish keyboard) to toggle it.</p>
+</section>
+<section id="the-command-palette" class="level2">
+<h2 class="anchored" data-anchor-id="the-command-palette">The command palette</h2>
+<p>Press <code>Ctrl+Shift+P</code> to launch the palette. This is, by far, the most important keyboard shortcut in VS Code because it allows access to every existing command in the editor. Just launch it, and start typing what you want to do.</p>
+</section>
+<section id="customization" class="level2">
+<h2 class="anchored" data-anchor-id="customization">Customization</h2>
+<section id="themes-and-icons" class="level3">
+<h3 class="anchored" data-anchor-id="themes-and-icons">Themes and icons</h3>
+<p>There are many, many different themes for VS Code and you can make your own ones as well. This is very useful when programming for long stretches of time, or when light reflects against your monitors. The keyboard command to change themes is <code>Ctrl+K, Ctrl+T</code> and is obviously one of my most used ones! Some of the themes I personally like:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Winter is Coming</td>
+<td>1984</td>
+</tr>
+<tr class="even">
+<td>Slack Theme</td>
+<td>Monokai</td>
+</tr>
+<tr class="odd">
+<td>Quiet Light</td>
+<td>Fairyfloss</td>
+</tr>
+<tr class="even">
+<td>Ayu</td>
+<td>Synthwave</td>
+</tr>
+<tr class="odd">
+<td>Noctis</td>
+<td>Nord</td>
+</tr>
+</tbody>
+</table>
+<p>You can also use different icon themes, which make your files easier to find in the explorer pane while making it more appealing to look at! You can go to <code>Preferences -&gt; File Icon Theme</code> to change it, or of course use the all-powerful command palette.</p>
+<p>Some of my favorites are:</p>
+<ul>
+<li>Material Icons<br>
+</li>
+<li>VS Code Icons<br>
+</li>
+<li>Ayu Icons (bundled with the Ayu theme)</li>
+</ul>
+<blockquote class="blockquote">
+<p>You can also find an extension that changes your file icons and instead shows Nicolas Cage’s face.</p>
+<p>Please use at your own risk.</p>
+</blockquote>
+<p>Every one of these changes and customizations are saved to the user preferences, which are reachable via <code>Ctrl+,</code> or the command palette. You can view them in a nice UI or in JSON format. For example, you can see that I have custom setting for <code>workbench.colorTheme</code> and <code>workbench.iconTheme</code>. I also have <code>window.zoomLevel</code> set to -1 because I zoomed out with <code>Ctrl+-</code> Note that settings can be applied globally at the user level or relative to a workspace.</p>
+<p>Some configuration options that I think are quite nice and improve collaboration and development rythm:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>"editor.minimap.enabled": false</code></td>
+<td>Removes the minimap shown at the right side of the editor.</td>
+</tr>
+<tr class="even">
+<td><code>"explorer.confirmDelete": false</code></td>
+<td>Deactivates the warning before deleting a file.</td>
+</tr>
+<tr class="odd">
+<td><code>"explorer.confirmDragAndDrop": false</code></td>
+<td>Removes warning when moving files in the explorer.</td>
+</tr>
+<tr class="even">
+<td><code>"editor.formatOnSave": true</code></td>
+<td>Automatically formats your code on save event.</td>
+</tr>
+<tr class="odd">
+<td><code>"editor.formatOnPaste": true</code></td>
+<td>Automatically formats your code when you paste it.</td>
+</tr>
+<tr class="even">
+<td><code>"javascript.format.enable": true</code></td>
+<td>Enables a JS formatter, such as <code>Prettier</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>"editor.multiCursorModifier": "alt"</code></td>
+<td>Selection of multiple line when holding Alt and clicking.</td>
+</tr>
+<tr class="even">
+<td><code>"files.trimTrailingWhitespace": true</code></td>
+<td>Deletes whitespace in files.</td>
+</tr>
+<tr class="odd">
+<td><code>"editor.quickSuggestionsDelay": 0</code></td>
+<td>Show code actions without delay.</td>
+</tr>
+<tr class="even">
+<td><code>"tfvc.location": "path\\to\\tf.exe"</code></td>
+<td>Tell Code where to find the Team Foundation executable.</td>
+</tr>
+<tr class="odd">
+<td><code>"powermode.enabled": true</code></td>
+<td>Only if you’re really serious about your coding.</td>
+</tr>
+</tbody>
+</table>
+<p>There are much more settings that you can tweak, and each extension or language has their own settings. Change, mix and swap them to find the setup that works best for you!</p>
+</section>
+<section id="fonts" class="level3">
+<h3 class="anchored" data-anchor-id="fonts">Fonts</h3>
+<p>You can also use a custom font if you wish to. Make sure the <code>.ttf</code> file is installed in your system and set your preferred font in the settings. I (and many other developers) use <a href="https://github.com/tonsky/FiraCode">Fira Code</a> because it has nice ligatures and <a href="https://www.typography.com/fonts/operator/styles">doesn’t cost $200</a>.</p>
+</section>
+</section>
+<section id="workspaces" class="level2">
+<h2 class="anchored" data-anchor-id="workspaces">Workspaces</h2>
+<p>A VS Code workspace is not a folder, or a working directory. It is a list of a project’s folders and files and can contain multiple working directories. You can save settings or disable extensions at the workspace level and they take precedence over the user settings. They are a bit like Visual Studio’s solutions.</p>
+<p>You can create one of these workspaces by going to <code>File -&gt; Save Workspace as...</code>, or just type workspace in the command palette to see all the available options.</p>
+</section>
+<section id="editing-evolved" class="level2">
+<h2 class="anchored" data-anchor-id="editing-evolved">Editing evolved</h2>
+<section id="intellisense" class="level3">
+<h3 class="anchored" data-anchor-id="intellisense">IntelliSense</h3>
+<p>IntelliSense is <strong>awesome</strong>, and its capabilities get augmented by Microsoft’s IntelliCode extension which leverages AI to improve code completion.</p>
+<p>In summary, the service provides code completion based on language semantics and your source code. The suggestions (variables, functions, methods…) pop up as you type and get filtered as you continue typing. You can bring up IntelliSense in any editor window by pressing <code>Ctrl+Space</code> or by typing a trigger character such as the dot character (<code>.</code>) for JavaScript class methods.</p>
+<p>You can also see quick info on each of the suggestions, such as the definition of a variable or function, the expected parameters for a function or the documentation of a class or object.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><img src="https://raw.githubusercontent.com/gonz4lex/vscode-ninja/master/assets/intellisense.jpg" class="img-fluid" alt="Types of IntelliSense Completion"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><em>Types of IntelliSense Completion. From https://code.visualstudio.com/docs/editor/intellisense.</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="code-formatting-and-navigation" class="level3">
+<h3 class="anchored" data-anchor-id="code-formatting-and-navigation">Code formatting and navigation</h3>
+<p>Aside from formatting on paste and save as mentioned in the settings section, you can also use the commands <code>Format Document</code> or <code>Format Selection</code> whenever needed, from the command palette or by right clicking the editor window.</p>
+<p>Navigating your files is much faster and easier with Code, for example: * You can jump directly to the definition of any function or variable, no matter where it is in your codebase. * You can also peek at its definition, maintaining your current position in the document. * You can also rename every occurrence of a symbol just by pressing <code>F2</code> with the cursor on the symbol.</p>
+</section>
+<section id="errors-warnings-and-info" class="level3">
+<h3 class="anchored" data-anchor-id="errors-warnings-and-info">Errors, warnings and info</h3>
+<p>You can find these in the problems tab, which can be activated with <code>Ctrl+Shift+M</code>. These problems are usually underlined in your code in different colors depending on the problem level. You can loop through them by pressing <code>F8</code> or <code>Shift+F8</code> which will also provide an inline window with details about the problem.</p>
+</section>
+<section id="keyboard-shortcuts" class="level3">
+<h3 class="anchored" data-anchor-id="keyboard-shortcuts">Keyboard shortcuts</h3>
+<p>These are a very nice productivity aid that help developers avoid moving their hands back and forth between the keyboard and the mouse. While it might seem a negligible time, it’s quite common to do several times every hour and it accumulates towards the end of the day.</p>
+<p>There are a lot of keyboards shortcuts and its quite impossible to remember them all. Thankfully, there is a <a href="https://code.visualstudio.com/assets/docs/getstarted/tips-and-tricks/KeyboardReferenceSheet.png">very handy reference</a> and you can remap your shortcuts very flexibly to better match your work process.</p>
+<p>Some of my recommendations and most used keyboard shortcuts:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Shortcut</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Ctrl+Shift+N</code></td>
+<td>Open a new Code instance. Use it when launching from custom folder.</td>
+</tr>
+<tr class="even">
+<td><code>Ctrl+Shift+Tab</code></td>
+<td>Shows you active files in the editor.</td>
+</tr>
+<tr class="odd">
+<td><code>Shift+Alt+↑/↓</code></td>
+<td>Copy current line above/below.</td>
+</tr>
+<tr class="even">
+<td><code>Alt+Click</code></td>
+<td>Insert cursor.</td>
+</tr>
+<tr class="odd">
+<td><code>Shift+Alt+I</code></td>
+<td>Insert cursor at the end of each selected line.</td>
+</tr>
+<tr class="even">
+<td><code>Shift+Alt+(drag mouse)</code></td>
+<td>Column or box selection.</td>
+</tr>
+<tr class="odd">
+<td><code>Ctrl+G</code></td>
+<td>Opens the command palette to let you enter a line number to go to.</td>
+</tr>
+<tr class="even">
+<td><code>Ctrl+Shift+O</code></td>
+<td>Shows the list of symbols found in the current file.</td>
+</tr>
+<tr class="odd">
+<td><code>Alt+-&gt;</code>/<code>Alt+&lt;-</code></td>
+<td>Switch between open files.</td>
+</tr>
+<tr class="even">
+<td><code>Alt+Ç</code></td>
+<td>Toggle line comment.</td>
+</tr>
+<tr class="odd">
+<td><code>Ctrl+K, Ctrl+T</code></td>
+<td>Change color theme.</td>
+</tr>
+<tr class="even">
+<td><code>Ctrl+X</code> / <code>Ctrl+C</code></td>
+<td>Cut or copy entire line, if you have empty selection.</td>
+</tr>
+<tr class="odd">
+<td><code>Ctrl+Shift+/</code></td>
+<td>Jump to matching bracket.</td>
+</tr>
+<tr class="even">
+<td><code>Shift+Alt+F</code> / <code>Ctrl+K, Ctrl+F</code></td>
+<td>Format document or selection.</td>
+</tr>
+<tr class="odd">
+<td><code>F12</code></td>
+<td>Go to symbol definition.</td>
+</tr>
+<tr class="even">
+<td><code>Ctrl+\</code></td>
+<td>Split editor.</td>
+</tr>
+<tr class="odd">
+<td><code>Shift+Alt+0</code></td>
+<td>Toggle editor layout between horizontal or vertical.</td>
+</tr>
+<tr class="even">
+<td><code>Ctrl+K, Z</code></td>
+<td>Enter Zen mode. Double press <code>Esc</code> to exit.</td>
+</tr>
+<tr class="odd">
+<td><code>Ctrl+´</code></td>
+<td>Show the terminal. <code>Ctrl+Ñ</code> in Spanish keyboards.</td>
+</tr>
+<tr class="even">
+<td><code>Ctrl+K, P</code></td>
+<td>Copy path of the active file.</td>
+</tr>
+<tr class="odd">
+<td><code>Ctrl+K, R</code></td>
+<td>Reveal the active file in the system explorer.</td>
+</tr>
+</tbody>
+</table>
+<p>This is just a very small subset of commands, and only for the base VS Code. Extensions add new features which can also be mapped to any shortcut keymap.</p>
+<blockquote class="blockquote">
+<p>Note that some shortcuts have different key chords. <code>Ctrl+K, Ctrl+T</code> is not the same as <code>Ctrl+K, T</code>. The latter means that you need to press the second key while <code>Ctrl</code> is <strong>not</strong> pressed down.</p>
+</blockquote>
+</section>
+<section id="code-snippets" class="level3">
+<h3 class="anchored" data-anchor-id="code-snippets">Code snippets</h3>
+<p>This is another very cool feature not unique to Code, and many languages already come with ready-made snippets for you to use. You can also, of course, author your own snippets. Just type “snippet” in the command palette and you will see available options. You can set a snippets file for each language or a common file for a given user, with snippets in many languages.</p>
+<p>Some examples of useful snippets would be a <code>TRY-CATCH</code> block in T-SQL or a for-loop in JavaScript.</p>
+</section>
+</section>
+<section id="extensions-showcase" class="level2">
+<h2 class="anchored" data-anchor-id="extensions-showcase">Extensions showcase</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Extension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Azure Repos</td>
+<td>Connectivity to Azure Repos and Team Foundation Server.</td>
+</tr>
+<tr class="even">
+<td>Better Comments</td>
+<td>Improved comment functionality.</td>
+</tr>
+<tr class="odd">
+<td>Bracket Pair Colorizer</td>
+<td>Better code readability.</td>
+</tr>
+<tr class="even">
+<td>Code Time</td>
+<td>Measures your coding frequency, volume and speed.</td>
+</tr>
+<tr class="odd">
+<td>ESLint</td>
+<td>JavaScript linting, needs ESLint library installed.</td>
+</tr>
+<tr class="even">
+<td>GitLens</td>
+<td>Supercharged version control, Git only.</td>
+</tr>
+<tr class="odd">
+<td>Live Share</td>
+<td>Remote collaboration within VS Code.</td>
+</tr>
+<tr class="even">
+<td>Settings Sync</td>
+<td>Synchronize settings across different machines.</td>
+</tr>
+<tr class="odd">
+<td>Polacode</td>
+<td>Take beautiful screenshots of your code.</td>
+</tr>
+<tr class="even">
+<td>Prettier</td>
+<td>Automatically format your files.</td>
+</tr>
+<tr class="odd">
+<td>SQL Server</td>
+<td>Integration with Microsoft’s SQL Server.</td>
+</tr>
+<tr class="even">
+<td>Visual Studio IntelliCode</td>
+<td>AI powered IntelliSense.</td>
+</tr>
+</tbody>
+</table>
+<p>You can also get recommended extensions based on your usage of the editor. For example, I get recommendations for a Markdown linter because I often use that file extension, and for the Notepad++ keymaps because I have that editor installed.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/alexgonzalezc\.dev\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "gonz4lex/gonz4lex.github.io";
+    script.dataset.repoId = "MDEwOlJlcG9zaXRvcnkyMjU5MTg3MDM=";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDODXc-784COr2R";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
