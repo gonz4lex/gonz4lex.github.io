@@ -23,7 +23,7 @@ website:
   back-to-top-navigation: true
   comments:
     giscus: 
-      repo: gonz4lex/qblog
+      repo: gonz4lex/gonz4lex.github.io
       reactions-enabled: true
       language: en
       theme:
