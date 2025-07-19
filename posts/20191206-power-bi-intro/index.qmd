@@ -3,8 +3,8 @@ title: An introduction to Power BI for data scientists
 subtitle: Power BI is a great free tool that can be used to quickly prototype visualizations for exploratory data analysis.
 date: 2019-12-6 17:42
 categories: 
-  - power bi
-  - data visualization
+  - Data Visualization
+  - PowerBI
 slug: introduction-to-power-bi-for-data-scientists
 author: Alex Gonzalez
 ---

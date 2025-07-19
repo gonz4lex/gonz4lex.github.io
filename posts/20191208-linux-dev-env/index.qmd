@@ -2,7 +2,7 @@
 title: How I got started with Linux
 subtitle: An overview of my Linux development setup.
 date: 2019-12-08 22:50
-categories: [linux, code]
+categories: [Linux, Code]
 slug: linux-dev-env
 author: Alex Gonzalez
 ---

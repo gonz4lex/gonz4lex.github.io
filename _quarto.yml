@@ -32,6 +32,6 @@ website:
 format:
   html:
     theme:
-      light: [lux, styles.scss]
-      dark: [slate, styles.scss]
+      light: [flatly, styles.scss]
+      dark: [darkly, styles.scss]
     css: styles.css

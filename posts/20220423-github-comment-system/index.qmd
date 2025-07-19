@@ -2,7 +2,7 @@
 title: A comment system for static websites using Github Discussions
 subtitle: Easily add comments to your static website with giscus and GitHub Discussions!
 date: 2022-4-23 13:31
-categories: web dev
+categories: Web Dev
 slug: github-comment-system
 author: Alex Gonzalez
 ---

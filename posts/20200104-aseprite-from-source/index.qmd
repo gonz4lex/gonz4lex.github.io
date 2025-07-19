@@ -3,8 +3,7 @@ title: How to build Aseprite from source in Ubuntu
 subtitle: Aseprite is an amazing pixel art software and its source code is open. This is how you can build and test it, or help with its development.
 date: 2020-1-4 00:33
 categories: 
-  - game dev
-  - art
+  - Game Dev
 slug: how-to-build-aseprite-from-source
 author: Alex Gonzalez
 ---

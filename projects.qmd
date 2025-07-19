@@ -1,5 +1,8 @@
 ---
-title: "Alex Gonzalez | Projects"
+title: "Projects"
+format:
+  html:
+    title: "Projects | Alex Gonzalez"
 comments: false
 page-layout: full
 ---
@@ -10,24 +13,25 @@ page-layout: full
 
 <div class="card mb-3">
 <div class="card-body">
-<h3 class="card-title">Project Name</h3>
-<h6 class="card-subtitle text-muted">Subtitle</h6>
+<h3 class="card-title">RuneLog</h3>
+<h6 class="card-subtitle text-muted">ML Experiment Tracker</h6>
 </div>
-<img src="assets/images/webpea_hex.webp" class="contain" height="400"/>
+![](assets/images/placeholder.png){width=50% .mx-auto .d-block}
 <div class="card-body">
 <p class="card-text">Description</p>
-<!-- <img src="https://github.com/nucleic-acid/webpea/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check" style="max-width: 100%;"> -->
+_A simple, file-based Python library for tracking machine learning experiments, inspired by MLflow._
+<!-- <img src="" alt="" style="max-width: 100%;"> -->
 <br><br>
 <h5>Key features:</h5>
 </div>
 <ul class="list-group list-group-flush">
-<li class="list-group-item">Feature 1</li>
-<li class="list-group-item">Feature 2</li>
-<li class="list-group-item">Feature 3</li>
+<li class="list-group-item">Simple, Zero-Overhead Setup</li>
+<li class="list-group-item">Local-first, Lightweight</li>
+<li class="list-group-item">Portable and Transparent</li>
 </ul>
 <div class="card-body">
-<a href="https://nucleic-acid.github.io/webpea/" class="card-link">Documentation</a>
-<a href="https://github.com/nucleic-acid/webpea/" class="card-link">Source code</a>
+<a href="https://github.com/gonz4lex/runelog/blob/develop/docs/quickstart.md" class="card-link">Documentation</a>
+<a href="https://github.com/gonz4lex/runelog" class="card-link">Source code</a>
 </div>
 </div>
 
@@ -37,13 +41,13 @@ page-layout: full
 
 <div class="card mb-3">
 <div class="card-body">
-<h3 class="card-title">Project Name</h3>
-<h6 class="card-subtitle text-muted">Subtitle</h6>
+<h3 class="card-title">Trophy Hunter Dashboard</h3>
+<h6 class="card-subtitle text-muted">Streamlit Dashboard for PSN Trophy Tracking</h6>
 </div>
-<img src="assets/images/webpea_hex.webp" class="contain" height="400"/>
+![](assets/images/placeholder.png){width=50% .mx-auto .d-block}
 <div class="card-body">
 <p class="card-text">Description</p>
-<!-- <img src="https://github.com/nucleic-acid/webpea/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check" style="max-width: 100%;"> -->
+<!-- <img src="" alt="" style="max-width: 100%;"> -->
 <br><br>
 <h5>Key features:</h5>
 </div>
@@ -53,8 +57,8 @@ page-layout: full
 <li class="list-group-item">Feature 3</li>
 </ul>
 <div class="card-body">
-<a href="https://nucleic-acid.github.io/webpea/" class="card-link">Documentation</a>
-<a href="https://github.com/nucleic-acid/webpea/" class="card-link">Source code</a>
+<a href="" class="card-link">Documentation</a>
+<a href="" class="card-link">Source code</a>
 </div>
 </div>
 

@@ -6,9 +6,9 @@ about:
   image-width: 20em
   image-shape: round
   links:
-    - icon: mastodon
-      url: ""
-      text: "Mastodon"
+    # - icon: mastodon
+    #   url: ""
+    #   text: "Mastodon"
     - icon: github
       url: "https://github.com/gonz4lex"
       text: "GitHub"
@@ -22,41 +22,42 @@ page-layout: full
 
 :::{#hero-heading}
 
-I'm a data geek specialising in machine learning engineering and data science, as well as visualization and analytics.
+I’m a machine learning engineer who enjoys writing code to build data-driven solutions, with experience across analytics, visualization, and production-grade ML systems.
 
 :::
 
-<!-- 
-I’m a medical doctor located in Munich (Germany), specializing in **human genetics**, where I work with rare & hereditary conditions. In my profession, I enjoy the intersection of **clinical work**, **lab work** and the **communication of scientific / medical matters** to patients and their families.
-
-After learning the statistical / analytic tools needed for my doctorate and scientific work, I continually worked on my **visualization skills**. I learned how to design charts, use colors, fonts and annotations to tell a fascinating story while keeping the data-representation accurate. I worked with data from many different fields and regularly participated in #TidyTuesday, #30DayChartChallenge & other data visualization challenges.
-
-In science, I value **transparent and reproducible methods** in order to build trust and foster continuous improvement & development. For the same reasons, I'm using open and reproducible tools for data visualization, such as **R/ggplot2 and Python**, whenever possible. -->
-
 ::: {.grid}
-::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-6}
+::: {.g-col-12}
 
 ## {{< fa solid bolt >}} Work
 
-- **ML Engineer** @ SDG Group (Mar 2023 - present)
+- **Senior Consultant, Data Science and ML** @ SDG Group (May 2025 - present)
+- **Consultant, Data Science and ML** @ SDG Group (Mar 2023 - May 2025)
 - **AI/ML Engineer** @ Bravent (Jan 2022 - Feb 2023)
 - **Data Scientist** @ Tinamica (Jan 2020 - Jan 2022)
+
 ---
+
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
 ## {{< fa solid graduation-cap >}} Education
 - **MSc Big Data Analytics for Economics and Business** @ UIB (2020)
 - **BSc Economics** @ UIB (2012 - 2017)
   
 :::
 
-::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-5  .g-start-lg-8}
+::: {.g-col-12 .g-col-md-6}
   
 ## {{< fa fire-flame-curved >}} Interests 
 
-- Statistics and Data Visualization
-- Technology and Engineering 
+- Statistics and Data
+- Tech and Engineering 
 - Skateboarding
+- Reading, writing and coding
 - Music, [many kinds](https://music.youtube.com/channel/UCiROnSAmnLLgKFFMh4aRShQ)
-- 
+- Gaming
 
 :::
 

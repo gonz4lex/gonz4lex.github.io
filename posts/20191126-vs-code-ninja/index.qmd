@@ -2,7 +2,7 @@
 title: Master of Visual Studio Code
 subtitle: Master Visual Studio Code and its features with these tips
 date: 2019-11-26 19:27
-categories: code
+categories: Code
 slug: vs-code-ninja
 author: Alex Gonzalez
 status: published

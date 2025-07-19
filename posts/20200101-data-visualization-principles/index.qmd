@@ -2,7 +2,7 @@
 title: Data visualization principles
 subtitle: Conveying meaning through data visualization is not an easy task. Here is how you might get started.
 date: 2020-1-01 20:05
-categories: data visualization
+categories: Data Visualization
 slug: data-visualization-principles
 image: chart-viz.jpg
 author: Alex Gonzalez

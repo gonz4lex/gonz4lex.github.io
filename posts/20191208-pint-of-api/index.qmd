@@ -2,7 +2,7 @@
 title: A Pint of API
 subtitle: Understand the fundamentals of APIs with this adaptation of a short talk I gave fully in-editor with Visual Studio Code.
 date: 2020-1-18 23:50
-categories: [web dev, talks]
+categories: [Web Dev]
 slug: a-pint-of-api
 author: Alex Gonzalez
 ---
