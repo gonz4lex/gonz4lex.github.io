@@ -1,0 +1,23 @@
+# Quarto build output
+_site/
+*.nb.html
+
+# Quarto cache folders
+.quarto/
+_extensions/.quarto-extension-cache/
+
+# Python cache and environment files
+__pycache__/
+*.py[cod]
+*.env
+.venv/
+
+
+# OS & editor junk
+.DS_Store
+Thumbs.db
+
+# Don't ignore important dotfolders
+!.github/
+!.gitignore
+!.nojekyll
