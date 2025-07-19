@@ -16,7 +16,7 @@ Hey there!
 :::
 
 ::: {.welcome-message}
-I'm a data geek specialising in machine learning engineering and data science, as well as visualization and analytics.
+I’m a machine learning engineer who enjoys writing code to build data-driven solutions, with experience across analytics, visualization, and production-grade ML systems.
 
 :::
 
