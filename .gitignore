@@ -21,3 +21,5 @@ Thumbs.db
 !.github/
 !.gitignore
 !.nojekyll
+
+/.quarto/

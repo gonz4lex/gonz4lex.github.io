@@ -3,11 +3,6 @@ page-layout: custom
 comments: false
 ---
 
-
-<!-- Mastodon -->
-<!-- <link rel="me" href="https://scicomm.xyz/@basepair" /> -->
-
-
 ::: {.grid}
 ::: {.g-col-10 .g-start-2 .g-col-sm-10 .g-start-sm-2 .g-col-md-10 .g-start-md-2 .g-col-lg-7 .g-start-lg-2}
 

@@ -11,7 +11,12 @@ website:
   navbar:
     logo: assets/images/welcome-blossoms.png
     right:
-      - about.qmd
+      - text: "Writing"
+        href: posts.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "About Me"
+        href: about.qmd
       - icon: github
         href: https://github.com/gonz4lex/
       - icon: linkedin
@@ -25,6 +30,7 @@ website:
     giscus: 
       repo: gonz4lex/gonz4lex.github.io
       reactions-enabled: true
+      mapping: pathname
       language: en
       theme:
         light: light

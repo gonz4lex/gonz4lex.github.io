@@ -43,8 +43,8 @@ I’m a machine learning engineer who enjoys writing code to build data-driven s
 ::: {.g-col-12 .g-col-md-6}
 
 ## {{< fa solid graduation-cap >}} Education
-- **MSc Big Data Analytics for Economics and Business** @ UIB (2020)
-- **BSc Economics** @ UIB (2012 - 2017)
+- **MSc Big Data Analytics for Economics and Business** @ Universitat de les Illes Balears
+- **BSc Economics** @ Universitat de les Illes Balears
   
 :::
 
