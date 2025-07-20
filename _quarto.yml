@@ -38,6 +38,7 @@ website:
 
 format:
   html:
+    include-after-body: umami.html
     theme:
       light: [flatly, styles.scss]
       dark: [darkly, styles.scss]
