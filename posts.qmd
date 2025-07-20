@@ -1,8 +1,5 @@
 ---
 title: "Writing"
-format:
-  html:
-    title: "Writing | Alex Gonzalez"
 listing:
   contents: posts
   type: default
