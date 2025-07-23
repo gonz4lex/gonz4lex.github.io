@@ -17,7 +17,20 @@
 <width>144</width>
 </image>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Tue, 02 Apr 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 23 Jul 2025 16:37:00 GMT</lastBuildDate>
+<item>
+  <title>Why I Migrated My Blog from Pelican to Quarto</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20250723-switching-to-quarto/</link>
+  <description><![CDATA[ For years, my blog ran on Pelican, a static site generator written in Python. It was powerful, flexible, and <em>a constant source of frustration</em>. I found myself spending more time wrestling with configurations, fixing broken themes, and making sacrifices to the dependency gods than actually writing. ]]></description>
+  <category>Python</category>
+  <category>ML</category>
+  <category>MLOps</category>
+  <category>Data Science</category>
+  <guid>https://alexgonzalezc.dev/posts/20250723-switching-to-quarto/</guid>
+  <pubDate>Wed, 23 Jul 2025 16:37:00 GMT</pubDate>
+  <media:content url="https://alexgonzalezc.dev/posts/20250723-switching-to-quarto/qblog.png" medium="image" type="image/png" height="53" width="144"/>
+</item>
 <item>
   <title>Understanding RAG systems with a practical application using locally executed LLMs</title>
   <dc:creator>Alex Gonzalez</dc:creator>

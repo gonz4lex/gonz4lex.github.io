@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alex Gonzalez">
+<meta name="dcterms.date" content="2025-07-23">
 
-<title>Projects – Alex Gonzalez</title>
+<title>Why I Migrated My Blog from Pelican to Quarto – Alex Gonzalez</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,30 +22,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c77c980ae4ace09218499f24d0dd9818.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-c77c980ae4ace09218499f24d0dd9818.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -240,14 +277,14 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/images/welcome-blossoms.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/images/welcome-blossoms.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Alex Gonzalez</span>
     </a>
   </div>
@@ -258,15 +295,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Writing</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item compact">
@@ -288,109 +325,167 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Why I Migrated My Blog from Pelican to Quarto</h1>
+            <p class="subtitle lead">A simpler path to technical writing</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Python</div>
+                <div class="quarto-category">ML</div>
+                <div class="quarto-category">MLOps</div>
+                <div class="quarto-category">Data Science</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Gonzalez </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 23, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-i-migrated-my-blog-from-pelican-to-quarto" id="toc-why-i-migrated-my-blog-from-pelican-to-quarto" class="nav-link active" data-scroll-target="#why-i-migrated-my-blog-from-pelican-to-quarto">Why I Migrated My Blog from Pelican to Quarto</a>
+  <ul class="collapse">
+  <li><a href="#what-is-quarto-and-why-leave-pelican" id="toc-what-is-quarto-and-why-leave-pelican" class="nav-link" data-scroll-target="#what-is-quarto-and-why-leave-pelican">What is Quarto? And Why Leave Pelican?</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a>
+  <ul class="collapse">
+  <li><a href="#writing-your-first-post" id="toc-writing-your-first-post" class="nav-link" data-scroll-target="#writing-your-first-post">Writing Your First Post</a></li>
+  <li><a href="#theming-and-customization" id="toc-theming-and-customization" class="nav-link" data-scroll-target="#theming-and-customization">Theming and Customization</a></li>
+  <li><a href="#hosting-and-deployment" id="toc-hosting-and-deployment" class="nav-link" data-scroll-target="#hosting-and-deployment">Hosting and Deployment</a></li>
+  <li><a href="#essential-features" id="toc-essential-features" class="nav-link" data-scroll-target="#essential-features">Essential Features</a></li>
+  </ul></li>
+  <li><a href="#takeaway-focus-on-what-matters" id="toc-takeaway-focus-on-what-matters" class="nav-link" data-scroll-target="#takeaway-focus-on-what-matters">Takeaway: Focus on What Matters</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
 
-
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<div class="card mb-3">
-<div class="card-body">
-<h3 class="card-title anchored">
-RuneLog
-</h3>
-<h6 class="card-subtitle text-muted anchored">
-ML Experiment Tracker
-</h6>
-</div>
-<img src="assets/images/placeholder-thumb.png" class="mx-auto d-block img-fluid" style="width:50.0%">
-<div class="card-body">
-<p class="card-text">
-Description
-</p>
-<em>A simple, file-based Python library for tracking machine learning experiments, inspired by MLflow.</em> <!-- <img src="" alt="" style="max-width: 100%;"> --> <br><br>
-<h5 class="anchored">
-Key features:
-</h5>
-</div>
-<ul class="list-group list-group-flush">
-<li class="list-group-item">
-Simple, Zero-Overhead Setup
-</li>
-<li class="list-group-item">
-Local-first, Lightweight
-</li>
-<li class="list-group-item">
-Portable and Transparent
-</li>
+<section id="why-i-migrated-my-blog-from-pelican-to-quarto" class="level1">
+<h1>Why I Migrated My Blog from Pelican to Quarto</h1>
+<p>For years, my blog ran on Pelican, a static site generator written in Python. It was powerful, flexible, and <em>a constant source of frustration</em>. I found myself spending more time wrestling with configurations, fixing broken themes, and making sacrifices to the dependency gods than actually writing.</p>
+<p>I wanted a change, and I wanted a tech stack that would let me focus on content creation, not on web design and endless config files. I wanted something self-hosted (f*ck off, Medium), data science-friendly, and straightforward to maintain.</p>
+<p>So while I was browsing some random statistics blog, I was very lucky to rediscover <a href="https://quarto.org/">Quarto</a> from my R days!</p>
+<section id="what-is-quarto-and-why-leave-pelican" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-quarto-and-why-leave-pelican">What is Quarto? And Why Leave Pelican?</h2>
+<p>I first stumbled upon Quarto while looking for better ways to create slide decks from my Jupyter notebooks. It’s an open-source scientific and technical publishing system developed by the team behind RStudio (now Posit). It’s built on Pandoc and allows you to create dynamic content with Python, R and Julia.</p>
+<p>It’s fantastic for presentations and reports, but it’s also designed to build entire websites.</p>
+<p>So, why did I finally ghost Pelican?</p>
+<ul>
+<li><strong>Config and Dependency Hell:</strong> Pelican is flexible, but that flexibility comes at the cost of complex configuration files. Setting up themes, plugins, and even basic metadata felt like a chore. Pelican seemed to be in a constant feud with my other dependencies.</li>
+<li><strong>Convoluted Workflow:</strong> My writing process involved a series of clunky steps to convert my notebooks, manage static assets, and preview changes. It was anything but seamless.</li>
+<li><strong>Unmaintained and Broken Themes:</strong> The theme I was using became unmaintained. My attempts to customize it led to a cascade of broken CSS and Jinja2 template errors. Web dev is definitely not my strong suit.</li>
 </ul>
-<div class="card-body">
-<p><a href="https://github.com/gonz4lex/runelog/blob/develop/docs/quickstart.md" class="card-link">Documentation</a> <a href="https://github.com/gonz4lex/runelog" class="card-link">Source code</a></p>
+<p>Quarto gives me a solution to all these issues with its “convention over configuration” philosophy and makes it incredibly easy to get started and maintain.</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<p>One of the bests parts of moving to Quarto was the setup. Creating a fully functional blog is literally a one-line command:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> create-project my-awesome-blog <span class="at">--type</span> website:blog</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This single command scaffolds a complete blog structure for you, with sample posts, an index page, and an <em>about</em> page.</p>
+<section id="writing-your-first-post" class="level3">
+<h3 class="anchored" data-anchor-id="writing-your-first-post">Writing Your First Post</h3>
+<p>You can write your posts directly in the formats you already know and use:</p>
+<ol type="1">
+<li><strong>Jupyter Notebooks (<code>.ipynb</code>):</strong> This is a game-changer for data scientists. You can write your analysis, generate plots, and write your narrative all in one place. To make a notebook a blog post, you just need to add a raw cell at the very top with the YAML frontmatter.</li>
+<li><strong>Quarto Markdown (<code>.qmd</code>):</strong> This is a superset of Pandoc Markdown. It’s clean, simple, and allows you to embed executable code chunks from Python, R, and more, right within your markdown file.</li>
+</ol>
+<p>All your posts go into the <code>posts/</code> directory. Here’s an example of the YAML frontmatter you’d put in a raw cell at the top of a Jupyter Notebook or at the top of a <code>.qmd</code> file:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My First Quarto Post"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"2025-07-21"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">Python</span><span class="kw">,</span><span class="at"> Data Science</span><span class="kw">,</span><span class="at"> Quarto</span><span class="kw">]</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">image</span><span class="kw">:</span><span class="at"> </span><span class="st">"preview.png"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>I like to create a new Git branch for every new post, which keeps your main branch clean and makes it easier to manage drafts.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> new-post-on-quarto</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-am</span> <span class="st">"feat: add new post on quarto"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin new-post-on-quarto</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a pull request to merge into main when ready</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="theming-and-customization" class="level3">
+<h3 class="anchored" data-anchor-id="theming-and-customization">Theming and Customization</h3>
+<p>The Bootstrap out-of-the-box styling makes customization intuitive for anyone with basic web knowledge, or even less than basic like me. You can easily tweak colors, fonts, and layouts using a simple <code>.scss</code> file. In your project’s root, just create a file named <code>theme.scss</code> and reference it in your <code>_quarto.yml</code> file.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>You can use Bootstrap’s components like cards or alerts to make your documents more engaging and professional.</p>
 </div>
-<div class="g-col-12 g-col-md-6">
-<div class="card mb-3">
-<div class="card-body">
-<h3 class="card-title anchored">
-Trophy Hunter Dashboard
-</h3>
-<h6 class="card-subtitle text-muted anchored">
-Streamlit Dashboard for PSN Trophy Tracking
-</h6>
 </div>
-<img src="assets/images/placeholder-thumb.png" class="mx-auto d-block img-fluid" style="width:50.0%">
-<div class="card-body">
-<p class="card-text">
-Description
-</p>
-<em>Web-based dashboard for gamers who want to visualize and analyze their PlayStation trophy collections.</em> <!-- <img src="" alt="" style="max-width: 100%;"> --> <br><br>
-<h5 class="anchored">
-Key features:
-</h5>
-</div>
-<ul class="list-group list-group-flush">
-<li class="list-group-item">
-Instant Profile Summary
-</li>
-<li class="list-group-item">
-In-Depth Trophy Log Analysis
-</li>
-<li class="list-group-item">
-Rich Visualizations and Platinum Mosaic
-</li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># _quarto.yml</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Awesome Blog"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">light</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> darkly</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">    # Or for custom themes:</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">    # light: theme.scss</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="hosting-and-deployment" class="level3">
+<h3 class="anchored" data-anchor-id="hosting-and-deployment">Hosting and Deployment</h3>
+<p>Quarto produces a static website that you can host anywhere, with one of the most popular (and free) options being GitHub Pages, although there are probably others like Netlify.</p>
+</section>
+<section id="essential-features" class="level3">
+<h3 class="anchored" data-anchor-id="essential-features">Essential Features</h3>
+<p>Setting up features that were cumbersome in Pelican is trivial in Quarto.</p>
+<ul>
+<li><strong>RSS Feed:</strong> Just add a few lines to <code>_quarto.yml</code>. Quarto handles the rest.</li>
+<li><strong>Comments:</strong> You can easily integrate services like <a href="https://giscus.app/">Giscus</a> (which uses GitHub Discussions), <a href="https://utteranc.es/">Utterances</a>, or <a href="https://web.hypothes.is/">Hypothesis</a>. For Giscus, you add a <code>comments</code> section to your <code>_quarto.yml</code>.</li>
+<li><strong>Analytics:</strong> Add your Google Analytics tracking ID or, for a more privacy-focused option, use a service like <a href="https://umami.is/">Umami</a>. It’s just another simple addition to the main config file.</li>
+<li><strong>Other Cool Stuff:</strong> One of my favorite features is “listings.” You can group posts by category or even create a dedicated series. By adding a <code>series</code> tag to your post’s frontmatter, Quarto can automatically generate a listing page that groups these posts together, showing the reader what else is in the series.</li>
 </ul>
-<div class="card-body">
-<p><a href="https://github.com/gonz4lex/trophy-hunter-dashboard/docs" class="card-link">Documentation</a> <a href="https://github.com/gonz4lex/trophy-hunter-dashboard" class="card-link">Source code</a></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+<section id="takeaway-focus-on-what-matters" class="level2">
+<h2 class="anchored" data-anchor-id="takeaway-focus-on-what-matters">Takeaway: Focus on What Matters</h2>
+<p>Migrating my blog to Quarto has felt liberating. I actually put it off for a long time because I dreaded the process, but once I got to it a year later, I was done in a couple of hours.</p>
+<p>The entire system is designed to be intuitive and stay out of your way. Writing posts directly in Jupyter notebooks has streamlined my workflow immensely, while style supporting enhanced Markdown for simpler articles. I now spend my time thinking about content, code, and analysis instead of why my theme’s CSS is broken <em>again</em>.</p>
+<p>If you’re a technical professional who wants to run a blog without much hassle, I can’t recommend Quarto enough. It’s the simple, powerful, and data-science-aware tool I wish I had from the start.</p>
 
 
+</section>
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script defer="" src="https://cloud.umami.is/script.js" data-website-id="e5e25c68-6797-4691-b967-91c588f8493a"></script>
@@ -806,6 +901,38 @@ Rich Visualizations and Platinum Mosaic
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark_dimmed">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      if (authorPrefersDark) {
+          [baseTheme, altTheme] = [altTheme, baseTheme];
+      }
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "gonz4lex/gonz4lex.github.io";
+    script.dataset.repoId = "R_kgDOPPVsqA";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOPPVsqM4CtM6M";
+    script.dataset.mapping = "pathname";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 
 

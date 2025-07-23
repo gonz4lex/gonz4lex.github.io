@@ -2,6 +2,7 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/20250723-switching-to-quarto/index.html",
       "/posts/20240402-rag-system-with-langchain/rag-system.html",
       "/posts/20220423-github-comment-system/index.html",
       "/posts/20191208-pint-of-api/index.html",
