@@ -55,8 +55,8 @@ _A simple, file-based Python library for tracking machine learning experiments, 
 <li class="list-group-item">Rich Visualizations and Platinum Mosaic</li>
 </ul>
 <div class="card-body">
-<a href="https://github.com/gonz4lex/trophy-hunter-dash/docs" class="card-link">Documentation</a>
-<a href="https://github.com/gonz4lex/trophy-hunter-dash" class="card-link">Source code</a>
+<a href="https://github.com/gonz4lex/trophy-hunter-dashboard/docs" class="card-link">Documentation</a>
+<a href="https://github.com/gonz4lex/trophy-hunter-dashboard" class="card-link">Source code</a>
 </div>
 </div>
 
