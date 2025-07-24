@@ -4,8 +4,7 @@ subtitle: "A simpler path to technical writing"
 date: 2025-7-23 16:37
 categories:
     - Python
-    - ML
-    - MLOps
+    - Writing
     - Data Science
 slug: runelog-vs-mlflow
 image: qblog.png
