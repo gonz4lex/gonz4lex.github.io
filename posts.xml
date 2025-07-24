@@ -24,8 +24,7 @@
   <link>https://alexgonzalezc.dev/posts/20250723-switching-to-quarto/</link>
   <description><![CDATA[ For years, my blog ran on Pelican, a static site generator written in Python. It was powerful, flexible, and <em>a constant source of frustration</em>. I found myself spending more time wrestling with configurations, fixing broken themes, and making sacrifices to the dependency gods than actually writing. ]]></description>
   <category>Python</category>
-  <category>ML</category>
-  <category>MLOps</category>
+  <category>Writing</category>
   <category>Data Science</category>
   <guid>https://alexgonzalezc.dev/posts/20250723-switching-to-quarto/</guid>
   <pubDate>Wed, 23 Jul 2025 16:37:00 GMT</pubDate>
