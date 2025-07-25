@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/posts.html",
+    "listing": "/posts/index.html",
     "items": [
       "/posts/20250723-switching-to-quarto/index.html",
       "/posts/20240402-rag-system-with-langchain/rag-system.html",

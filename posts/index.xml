@@ -6,13 +6,13 @@
       version="2.0">
 <channel>
 <title>Alex Gonzalez</title>
-<link>https://alexgonzalezc.dev/posts.html</link>
-<atom:link href="https://alexgonzalezc.dev/posts.xml" rel="self" type="application/rss+xml"/>
+<link>https://alexgonzalezc.dev/posts/</link>
+<atom:link href="https://alexgonzalezc.dev/posts/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <image>
 <url>https://alexgonzalezc.dev/assets/images/welcome-blossoms.png</url>
 <title>Alex Gonzalez</title>
-<link>https://alexgonzalezc.dev/posts.html</link>
+<link>https://alexgonzalezc.dev/posts/</link>
 <height>144</height>
 <width>144</width>
 </image>
@@ -67,55 +67,6 @@
   <category>Game Dev</category>
   <guid>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/</guid>
   <pubDate>Sat, 04 Jan 2020 00:33:00 GMT</pubDate>
-</item>
-<item>
-  <title>Data visualization principles</title>
-  <dc:creator>Alex Gonzalez</dc:creator>
-  <link>https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/</link>
-  <description><![CDATA[ Updated on 2020-1-23 with figures and examples, like a good post about data visualization. ]]></description>
-  <category>Data Visualization</category>
-  <guid>https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/</guid>
-  <pubDate>Wed, 01 Jan 2020 20:05:00 GMT</pubDate>
-  <media:content url="https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/chart-viz.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Data Analysis eXpressions query language</title>
-  <dc:creator>Alex Gonzalez</dc:creator>
-  <link>https://alexgonzalezc.dev/posts/20191227-learning-dax/</link>
-  <description><![CDATA[ DAX is a functional language, that is, execution flows from function calls read from inner to outer context in nested calls. ]]></description>
-  <category>Data Engineering</category>
-  <category>PowerBI</category>
-  <guid>https://alexgonzalezc.dev/posts/20191227-learning-dax/</guid>
-  <pubDate>Fri, 27 Dec 2019 10:32:00 GMT</pubDate>
-</item>
-<item>
-  <title>How I got started with Linux</title>
-  <dc:creator>Alex Gonzalez</dc:creator>
-  <link>https://alexgonzalezc.dev/posts/20191208-linux-dev-env/</link>
-  <description><![CDATA[ <img src="https://alexgonzalezc.dev/posts/20191208-linux-dev-env/linux.png" class="img-fluid"> ]]></description>
-  <category>Linux</category>
-  <category>Code</category>
-  <guid>https://alexgonzalezc.dev/posts/20191208-linux-dev-env/</guid>
-  <pubDate>Sun, 08 Dec 2019 22:50:00 GMT</pubDate>
-</item>
-<item>
-  <title>An introduction to Power BI for data scientists</title>
-  <dc:creator>Alex Gonzalez</dc:creator>
-  <link>https://alexgonzalezc.dev/posts/20191206-power-bi-intro/</link>
-  <description><![CDATA[ Get started with Power BI to speed up your exploratory data analysis when looking for trends and features than might be useful for prediction or classification with machine learning algorithms. ]]></description>
-  <category>Data Visualization</category>
-  <category>PowerBI</category>
-  <guid>https://alexgonzalezc.dev/posts/20191206-power-bi-intro/</guid>
-  <pubDate>Fri, 06 Dec 2019 17:42:00 GMT</pubDate>
-</item>
-<item>
-  <title>Master of Visual Studio Code</title>
-  <dc:creator>Alex Gonzalez</dc:creator>
-  <link>https://alexgonzalezc.dev/posts/20191126-vs-code-ninja/</link>
-  <description><![CDATA[ Visual Studio Code is a lightweight code editor with a lot of powerful capabilities. If you like Visual Studio, this is quite similar but without the abhorrent load times. It’s available for the main operative systems and includes built-in support for JavaScript. It has a rich ecosystem of extensions that extend support to other languages such as C#, Java, Python, and SQL, as well as runtimes like .NET and Unity. ]]></description>
-  <category>Code</category>
-  <guid>https://alexgonzalezc.dev/posts/20191126-vs-code-ninja/</guid>
-  <pubDate>Tue, 26 Nov 2019 19:27:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
