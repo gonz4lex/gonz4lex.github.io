@@ -8,6 +8,7 @@ website:
   title: "Alex Gonzalez"
   image: assets/images/welcome-blossoms.png
   site-url: https://alexgonzalezc.dev/
+  favicon: assets/images/favicon.ico
   navbar:
     logo: assets/images/welcome-blossoms.png
     right:
