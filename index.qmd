@@ -34,7 +34,7 @@ I’m a machine learning engineer who enjoys writing code to build data-driven s
 <div class="card-body">
 <h5 class="card-title"> {{< fa solid pen-clip >}} Writing</h5>
 <p class="card-text">I write sometimes, some of it is good stuff.</p>
-<a href="posts.html" class="btn btn-primary stretched-link">Start reading</a>
+<a href="posts/index.html" class="btn btn-primary stretched-link">Start reading</a>
 </div>
 </div>
 
