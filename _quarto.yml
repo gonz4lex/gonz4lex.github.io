@@ -12,7 +12,7 @@ website:
     logo: assets/images/welcome-blossoms.png
     right:
       - text: "Writing"
-        href: posts.qmd
+        href: posts/index.qmd
       - text: "Projects"
         href: projects.qmd
       - text: "About Me"
