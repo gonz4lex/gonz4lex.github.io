@@ -13,9 +13,41 @@ page-layout: full
 <h3 class="card-title">RuneLog</h3>
 <h6 class="card-subtitle text-muted">ML Experiment Tracker</h6>
 </div>
-![](assets/images/runelog-cli.png){width=95% .mx-auto .d-block}
+
+::: {.g-col-12 .g-col-md-6}
+
+```{=html}
+<a href="https://github.com/gonz4lex/runelog" target="_blank" style="display: block; text-align: center;">
+  <div style="width: 100%; max-width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <img src="assets/images/runelog-cli.png"
+         alt="RuneLog CLI Screenshot"
+         class="thumbnail-image"
+         style="max-height: 100%; max-width: 100%; object-fit: contain;">
+  </div>
+</a>
+```
+
+:::
+
+<br>
+<!-- Badges -->
+<div style="display: flex; gap: 0.5rem; align-items: center; justify-content: center;">
+  <a href="https://github.com/gonz4lex/runelog/actions/workflows/tests.yml">
+    <img src="https://github.com/gonz4lex/runelog/actions/workflows/tests.yml/badge.svg" alt="Tests">
+  </a>
+  <a href="https://codecov.io/gh/gonz4lex/runelog">
+    <img src="https://codecov.io/gh/gonz4lex/runelog/branch/develop/graph/badge.svg" alt="CodeCov">
+  </a>
+  <a href="https://github.com/gonz4lex/runelog/actions/workflows/deploy-docs.yml">
+    <img src="https://github.com/gonz4lex/runelog/actions/workflows/deploy-docs.yml/badge.svg" alt="Docs">
+  </a>
+  <a href="https://deepwiki.com/gonz4lex/runelog">
+    <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
+  </a>
+</div>
+
 <div class="card-body">
-<p class="card-text">Description</p>
+<!-- <p class="card-text">Description</p> -->
 _A simple, file-based Python library for tracking machine learning experiments, inspired by MLflow._
 <!-- <img src="" alt="" style="max-width: 100%;"> -->
 <br><br>
@@ -41,11 +73,32 @@ _A simple, file-based Python library for tracking machine learning experiments, 
 <h3 class="card-title">Trophy Hunter Dashboard</h3>
 <h6 class="card-subtitle text-muted">Streamlit Dashboard for PSN Trophy Tracking</h6>
 </div>
-![](assets/images/ps-platinum.png){width=36% .mx-auto .d-block}
+
+::: {.g-col-12 .g-col-md-6}
+
+```{=html}
+<a href="https://gonz4lex-trophy-hunter-dashboard-app-av0qbw.streamlit.app/" target="_blank" style="display: block; text-align: center;">
+  <div style="width: 100%; max-width: 100%; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+    <img src="assets/images/ps-platinum.png"
+         alt="Trophy Hunter Dashboard"
+         class="thumbnail-image"
+         style="max-height: 100%; max-width: 100%; object-fit: contain;">
+  </div>
+</a>
+```
+
+:::
+
+<br>
+<!-- Badges -->
+<div style="display: flex; gap: 0.5rem; align-items: center; justify-content: center;">
+  <a href="https://deepwiki.com/gonz4lex/trophy-hunter-dashboard">
+    <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki">
+  </a>
+</div>
+
 <div class="card-body">
-<p class="card-text">Description</p>
 *Web-based dashboard for gamers who want to visualize and analyze their PlayStation trophy collections.*
-<!-- <img src="" alt="" style="max-width: 100%;"> -->
 <br><br>
 <h5>Key features:</h5>
 </div>
