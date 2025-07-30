@@ -17,7 +17,20 @@
 <width>144</width>
 </image>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Wed, 23 Jul 2025 16:37:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 30 Jul 2025 15:37:00 GMT</lastBuildDate>
+<item>
+  <title>Introducing RuneLog, a Simple ML Experiment Tracker for Python</title>
+  <dc:creator>Alex Gonzalez</dc:creator>
+  <link>https://alexgonzalezc.dev/posts/20250728-runelog-v0.1.0-release/</link>
+  <description><![CDATA[ Experiment tracking in machine learning projects is often an afterthought for many practitioners, and it occurs once you’re deep in the modeling process and you have refactor most of your notebooks and scripts. Committing to tracking from the start of the project is sure to make your workflows more structured and reproducible. ]]></description>
+  <category>Python</category>
+  <category>ML</category>
+  <category>MLOps</category>
+  <category>Data Science</category>
+  <guid>https://alexgonzalezc.dev/posts/20250728-runelog-v0.1.0-release/</guid>
+  <pubDate>Wed, 30 Jul 2025 15:37:00 GMT</pubDate>
+  <media:content url="https://alexgonzalezc.dev/posts/20250728-runelog-v0.1.0-release/runelog-cli.png" medium="image" type="image/png" height="69" width="144"/>
+</item>
 <item>
   <title>Why I Migrated My Blog from Pelican to Quarto</title>
   <dc:creator>Alex Gonzalez</dc:creator>
@@ -58,15 +71,6 @@
   <category>Web Dev</category>
   <guid>https://alexgonzalezc.dev/posts/20191208-pint-of-api/</guid>
   <pubDate>Sat, 18 Jan 2020 23:50:00 GMT</pubDate>
-</item>
-<item>
-  <title>How to build Aseprite from source in Ubuntu</title>
-  <dc:creator>Alex Gonzalez</dc:creator>
-  <link>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/</link>
-  <description><![CDATA[ <img src="https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/aseprite.png" class="img-fluid figure-img"> ]]></description>
-  <category>Game Dev</category>
-  <guid>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/</guid>
-  <pubDate>Sat, 04 Jan 2020 00:33:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

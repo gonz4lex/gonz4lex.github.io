@@ -2,6 +2,7 @@
   {
     "listing": "/posts/index.html",
     "items": [
+      "/posts/20250728-runelog-v0.1.0-release/index.html",
       "/posts/20250723-switching-to-quarto/index.html",
       "/posts/20240402-rag-system-with-langchain/rag-system.html",
       "/posts/20220423-github-comment-system/index.html",
