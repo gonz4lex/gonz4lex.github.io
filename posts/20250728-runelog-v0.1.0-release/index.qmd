@@ -18,7 +18,7 @@ Now, you think about using a powerful tool like MLflow, but then comes the setup
 
 I love MLflow and the power of comprehensive MLOps platforms like W&B, but for solo or small projects, they often feel like building the analog of a deep neural network when all you need is a simple (but trusty) linear regression.
 
-So, I built a solution that treats experiment tracking as a local, file-based operation, designed to integrate with Git, not a database. I'm introducing this tool today with its v0.1.0 release: RuneLog.
+So, I built a solution that treats experiment tracking as a local, file-based operation, designed to integrate with Git, not a database. I'm introducing this tool today with its v0.1.0 release: **RuneLog**.
 
 
 ### The Zero-Setup Experiment Tracker
