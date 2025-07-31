@@ -15,7 +15,9 @@ author: Alex Gonzalez
 
 For years, my blog ran on Pelican, a static site generator written in Python. It was powerful, flexible, and *a constant source of frustration*. I found myself spending more time wrestling with configurations, fixing broken themes, and making sacrifices to the dependency gods than actually writing.
 
-I wanted a change, and I wanted a tech stack that would let me focus on content creation, not on web design and endless config files. I wanted something self-hosted (f*ck off, Medium), data science-friendly, and straightforward to maintain.
+I wanted a change, and I wanted a tech stack that would let me focus on content creation, not on web design and endless config files. I wanted something self-hosted (f*ck off, Medium[^1]), data science-friendly, and straightforward to maintain.
+
+[^1]: Medium is heavily paywalled, which contradicts the movement towards open science and reproducibility. Their revenue model also disincentivizes concise and technical writing. It's basically SEO bait for scientific writing, padded with repetitive phrasing and buzzwords designed to artificially maximize reader engagement and time.
 
 So while I was browsing some random statistics blog, I was very lucky to rediscover [Quarto](https://quarto.org/) from my R days! 
 
