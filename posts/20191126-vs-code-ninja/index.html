@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,18 +70,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../assets/images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-c77c980ae4ace09218499f24d0dd9818.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-7a6b7c03bfe877f08e82060a06cb6bcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-805f9bacbb7a627311662ee9c8cea968.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-3d499a259de03524f13ba29ade78899b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-805f9bacbb7a627311662ee9c8cea968.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -283,7 +284,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/welcome-blossoms.png" alt="" class="navbar-logo">
+    <img src="../../assets/images/welcome-blossoms.png" alt="" class="navbar-logo light-content">
+    <img src="../../assets/images/welcome-blossoms.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Alex Gonzalez</span>
@@ -441,7 +443,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>One of the killer features of Code. The Visual Studio marketplace is community-sourced and you can make your own extensions with JavaScript or TypeScript. There are loads of useful features in extensions, but take into account that every extension that you install with have a small impact in the performance of your editor. Also, they bloat the <code>%APPDATA%</code> folder in your roaming profile, making your machine start up a lot more slowly.</p>
 <p>As a workaround, you can write a one line batch file that loads the editor’s metadata from a location outside the roaming profile where you have previously placed the Code folder.<br>
 For example, my setup is as follows:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>code <span class="op">--</span>extensions-dir <span class="st">"C:/Code"</span> <span class="op">--</span>user-data-dir <span class="st">"C:/Code"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>code <span class="op">--</span>extensions-dir <span class="st">"C:/Code"</span> <span class="op">--</span>user-data-dir <span class="st">"C:/Code"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Save this with a <code>.bat</code> extension and place it in your desktop. Next time you open VS Code, you can do it from that icon. It’s not the most elegant solution, but it works in corporate machines.</p>
 <p>Alternatively, check the <a href="https://code.visualstudio.com/docs/editor/portable">portable version of VS Code</a>.</p>
 <p>They can also be enabled or disabled whenever necessary at the user or the workspace level.</p>
@@ -855,13 +857,14 @@ For example, my setup is as follows:</p>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alexgonzalezc.dev/projects.html</loc>
-    <lastmod>2025-07-31T13:17:37.442Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20191208-pint-of-api/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.433Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20250728-runelog-v0.1.0-release/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.438Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20191208-linux-dev-env/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.442Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.435Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.437Z</lastmod>
-  </url>
-  <url>
     <loc>https://alexgonzalezc.dev/about.html</loc>
-    <lastmod>2025-07-31T13:17:37.422Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.427Z</lastmod>
+    <lastmod>2026-03-01T17:58:43.838Z</lastmod>
   </url>
   <url>
     <loc>https://alexgonzalezc.dev/posts/20240402-rag-system-with-langchain/rag-system.html</loc>
-    <lastmod>2025-07-31T13:17:37.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20220423-github-comment-system/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.437Z</lastmod>
-  </url>
-  <url>
-    <loc>https://alexgonzalezc.dev/posts/20191206-power-bi-intro/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.428Z</lastmod>
+    <lastmod>2026-03-01T17:58:43.852Z</lastmod>
   </url>
   <url>
     <loc>https://alexgonzalezc.dev/posts/20191126-vs-code-ninja/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.428Z</lastmod>
+    <lastmod>2026-03-01T17:58:43.844Z</lastmod>
   </url>
   <url>
-    <loc>https://alexgonzalezc.dev/posts/20191227-learning-dax/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.434Z</lastmod>
+    <loc>https://alexgonzalezc.dev/posts/20191208-linux-dev-env/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.844Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20191206-power-bi-intro/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.844Z</lastmod>
   </url>
   <url>
     <loc>https://alexgonzalezc.dev/posts/20250723-switching-to-quarto/index.html</loc>
-    <lastmod>2025-07-31T13:17:37.438Z</lastmod>
+    <lastmod>2026-03-01T17:58:43.852Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20200101-data-visualization-principles/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.843Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20200104-aseprite-from-source/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.851Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20191208-pint-of-api/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20191227-learning-dax/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.849Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20220423-github-comment-system/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.851Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/posts/20250728-runelog-v0.1.0-release/index.html</loc>
+    <lastmod>2026-03-01T17:58:43.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://alexgonzalezc.dev/projects.html</loc>
+    <lastmod>2026-03-01T17:58:43.856Z</lastmod>
   </url>
 </urlset>
