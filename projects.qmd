@@ -115,4 +115,33 @@ _A simple, file-based Python library for tracking machine learning experiments, 
 
 :::
 
+::: {.g-col-12 .g-col-md-6}
+
+<div class="card mb-3">
+<div class="card-body">
+<h3 class="card-title">PS Store Expense Tracker</h3>
+<h6 class="card-subtitle text-muted">PlayStation Store Purchase Analytics</h6>
+</div>
+
+<img src="assets/images/ps_store_tracker.png"
+         alt="PS Store Tracker"
+         class="thumbnail-image"
+         style="max-height: 100%; max-width: 100%; object-fit: contain;">
+<div class="card-body">
+_Visualize PlayStation Store purchasing trends based on email purchase receipts._
+<br><br>
+<h5>Key features:</h5>
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">Analyze Your Spending Habits</li>
+<li class="list-group-item">Integrates with Gmail</li>
+<li class="list-group-item">Anonymized Demo Mode Included</li>
+</ul>
+<div class="card-body">
+<a href="https://github.com/gonz4lex/ps-store-tracker" class="card-link">Source code</a>
+</div>
+</div>
+
+:::
+
 :::
